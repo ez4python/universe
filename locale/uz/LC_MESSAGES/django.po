@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-11 02:01+0500\n"
-"PO-Revision-Date: 2024-05-11 02:05+0500\n"
-"Last-Translator:   <>\n"
+"POT-Creation-Date: 2024-05-11 13:57+0500\n"
+"PO-Revision-Date: 2024-05-11 14:04+0500\n"
+"Last-Translator: Akbarali Salohiddinov <a.salohiddinov@tuit.uz>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -19,18 +19,110 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Translated-Using: django-rosetta 0.10.0\n"
 
-#: root/settings.py:81
+#: apps/admin.py:15
+msgid "Personal info"
+msgstr "Shaxsiy ma'lumot"
+
+#: apps/admin.py:17
+msgid "Permissions"
+msgstr "Ruxsatlar"
+
+#: apps/admin.py:28
+msgid "Important dates"
+msgstr "Muhim sanalar"
+
+#: apps/models/news.py:8
+msgid "category_name"
+msgstr "Nomi"
+
+#: apps/models/news.py:11
+msgid "Category"
+msgstr "Kategoriya"
+
+#: apps/models/news.py:12
+msgid "Categories"
+msgstr "Kategoriyalar"
+
+#: apps/models/news.py:16
+msgid "new_title"
+msgstr "Sarlavha"
+
+#: apps/models/news.py:17
+msgid "new_slug"
+msgstr "Slag"
+
+#: apps/models/news.py:18
+msgid "new_image"
+msgstr "Rasmi"
+
+#: apps/models/news.py:19
+msgid "new_description"
+msgstr "Tavsifi"
+
+#: apps/models/news.py:20
+msgid "new_author"
+msgstr "Muallif"
+
+#: apps/models/news.py:21
+msgid "created_at"
+msgstr "Yaratildi"
+
+#: apps/models/news.py:22
+msgid "updated_at"
+msgstr "O'zgartirildi"
+
+#: apps/models/news.py:25
+msgid "New"
+msgstr "Yangilik"
+
+#: apps/models/news.py:26
+msgid "News"
+msgstr "Yangiliklar"
+
+#: apps/models/user.py:8
+msgid "first_name"
+msgstr "Ism"
+
+#: apps/models/user.py:9
+msgid "last_name"
+msgstr "Familiya"
+
+#: apps/models/user.py:10
+msgid "username"
+msgstr "Laqab"
+
+#: apps/models/user.py:11
+msgid "user_bio"
+msgstr "Bio"
+
+#: apps/models/user.py:12
+msgid "user_avatar"
+msgstr "Rasmi"
+
+#: apps/models/user.py:16
+msgid "User"
+msgstr "Foydalanuvchi"
+
+#: apps/models/user.py:17
+msgid "Users"
+msgstr "Foydalanuvchilar"
+
+#: root/settings.py:83
 msgid "English"
 msgstr "Inglizcha"
 
-#: root/settings.py:82
+#: root/settings.py:84
 msgid "Uzbek"
 msgstr "Uzbekcha"
 
-#: root/settings.py:83
+#: root/settings.py:85
 msgid "Russian"
 msgstr "Ruscha"
 
 #: root/urls.py:12
 msgid "admin/"
 msgstr "admin/"
+
+#: templates/base.html:60
+msgid "Read More"
+msgstr "Batafsil"

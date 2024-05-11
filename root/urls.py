@@ -10,9 +10,9 @@ from root.settings import DEBUG
 
 urlpatterns = i18n_patterns(
     path(_('admin/'), admin.site.urls),
-    path('set_language/', set_language, name='set_language'),
+    path('', include('apps.urls')),
     re_path(r'^rosetta/', include('rosetta.urls')),
-    # path('', include('apps.urls')),
+    path('set_language/', set_language, name='set_language'),
     path("ckeditor5/", include('django_ckeditor_5.urls')),
 )
 if DEBUG:

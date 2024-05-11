@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-11 02:01+0500\n"
+"POT-Creation-Date: 2024-05-11 13:57+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,18 +20,110 @@ msgstr ""
 "n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
 "(n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: root/settings.py:81
-msgid "English"
+#: apps/admin.py:15
+msgid "Personal info"
 msgstr ""
 
-#: root/settings.py:82
-msgid "Uzbek"
+#: apps/admin.py:17
+msgid "Permissions"
+msgstr ""
+
+#: apps/admin.py:28
+msgid "Important dates"
+msgstr ""
+
+#: apps/models/news.py:8
+msgid "category_name"
+msgstr ""
+
+#: apps/models/news.py:11
+msgid "Category"
+msgstr ""
+
+#: apps/models/news.py:12
+msgid "Categories"
+msgstr ""
+
+#: apps/models/news.py:16
+msgid "new_title"
+msgstr ""
+
+#: apps/models/news.py:17
+msgid "new_slug"
+msgstr ""
+
+#: apps/models/news.py:18
+msgid "new_image"
+msgstr ""
+
+#: apps/models/news.py:19
+msgid "new_description"
+msgstr ""
+
+#: apps/models/news.py:20
+msgid "new_author"
+msgstr ""
+
+#: apps/models/news.py:21
+msgid "created_at"
+msgstr ""
+
+#: apps/models/news.py:22
+msgid "updated_at"
+msgstr ""
+
+#: apps/models/news.py:25
+msgid "New"
+msgstr ""
+
+#: apps/models/news.py:26
+msgid "News"
+msgstr ""
+
+#: apps/models/user.py:8
+msgid "first_name"
+msgstr ""
+
+#: apps/models/user.py:9
+msgid "last_name"
+msgstr ""
+
+#: apps/models/user.py:10
+msgid "username"
+msgstr ""
+
+#: apps/models/user.py:11
+msgid "user_bio"
+msgstr ""
+
+#: apps/models/user.py:12
+msgid "user_avatar"
+msgstr ""
+
+#: apps/models/user.py:16
+msgid "User"
+msgstr ""
+
+#: apps/models/user.py:17
+msgid "Users"
 msgstr ""
 
 #: root/settings.py:83
+msgid "English"
+msgstr ""
+
+#: root/settings.py:84
+msgid "Uzbek"
+msgstr ""
+
+#: root/settings.py:85
 msgid "Russian"
 msgstr ""
 
 #: root/urls.py:12
 msgid "admin/"
+msgstr ""
+
+#: templates/base.html:60
+msgid "Read More"
 msgstr ""

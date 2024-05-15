@@ -116,3 +116,4 @@ cython_debug/
 apps/migrations
 Makefile
 media
+db.sqlite3

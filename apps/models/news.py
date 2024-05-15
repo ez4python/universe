@@ -45,3 +45,4 @@ class New(Model):
             unique_slug = f'{slug}-{num}'
             num += 1
         return unique_slug
+

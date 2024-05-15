@@ -9,121 +9,120 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-11 13:57+0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2024-05-15 10:25+0500\n"
+"Last-Translator: Akbarali Salohiddinov <a.salohiddinov@tuit.uz>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
-"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"X-Translated-Using: django-rosetta 0.10.0\n"
 
 #: apps/admin.py:15
 msgid "Personal info"
-msgstr ""
+msgstr "Личная информация"
 
 #: apps/admin.py:17
 msgid "Permissions"
-msgstr ""
+msgstr "Разрешения"
 
 #: apps/admin.py:28
 msgid "Important dates"
-msgstr ""
+msgstr "Важные даты"
 
 #: apps/models/news.py:8
 msgid "category_name"
-msgstr ""
+msgstr "Название"
 
 #: apps/models/news.py:11
 msgid "Category"
-msgstr ""
+msgstr "Категория"
 
 #: apps/models/news.py:12
 msgid "Categories"
-msgstr ""
+msgstr "Категории"
 
 #: apps/models/news.py:16
 msgid "new_title"
-msgstr ""
+msgstr "Название"
 
 #: apps/models/news.py:17
 msgid "new_slug"
-msgstr ""
+msgstr "Слаг"
 
 #: apps/models/news.py:18
 msgid "new_image"
-msgstr ""
+msgstr "Рисунок"
 
 #: apps/models/news.py:19
 msgid "new_description"
-msgstr ""
+msgstr "Описание"
 
 #: apps/models/news.py:20
 msgid "new_author"
-msgstr ""
+msgstr "Автор"
 
 #: apps/models/news.py:21
 msgid "created_at"
-msgstr ""
+msgstr "Создан в"
 
 #: apps/models/news.py:22
 msgid "updated_at"
-msgstr ""
+msgstr "Обновлено в"
 
 #: apps/models/news.py:25
 msgid "New"
-msgstr ""
+msgstr "Новость"
 
 #: apps/models/news.py:26
 msgid "News"
-msgstr ""
+msgstr "Новости"
 
 #: apps/models/user.py:8
 msgid "first_name"
-msgstr ""
+msgstr "Имя"
 
 #: apps/models/user.py:9
 msgid "last_name"
-msgstr ""
+msgstr "Фамилия"
 
 #: apps/models/user.py:10
 msgid "username"
-msgstr ""
+msgstr "Никнейм"
 
 #: apps/models/user.py:11
 msgid "user_bio"
-msgstr ""
+msgstr "Био"
 
 #: apps/models/user.py:12
 msgid "user_avatar"
-msgstr ""
+msgstr "Аватар"
 
 #: apps/models/user.py:16
 msgid "User"
-msgstr ""
+msgstr "Ползователь"
 
 #: apps/models/user.py:17
 msgid "Users"
-msgstr ""
+msgstr "Ползователи"
 
 #: root/settings.py:83
 msgid "English"
-msgstr ""
+msgstr "Английский"
 
 #: root/settings.py:84
 msgid "Uzbek"
-msgstr ""
+msgstr "Узбекский"
 
 #: root/settings.py:85
 msgid "Russian"
-msgstr ""
+msgstr "Русский"
 
 #: root/urls.py:12
 msgid "admin/"
-msgstr ""
+msgstr "admin/"
 
 #: templates/base.html:60
 msgid "Read More"
-msgstr ""
+msgstr "Читать далее"

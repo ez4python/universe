@@ -2,21 +2,27 @@ from django.db.models import Model, DateTimeField, CharField, ForeignKey, CASCAD
 from django.utils.text import slugify
 from django.utils.translation import gettext_lazy as _
 from django_ckeditor_5.fields import CKEditor5Field
+from parler.models import TranslatableModel, TranslatedFields
 
 
-class Category(Model):
-    name = CharField(verbose_name=_('category_name'), max_length=255)
+class Category(TranslatableModel):
+    translations = TranslatedFields(
+        name=CharField(verbose_name=_('category_name'), max_length=255)
+    )
 
     class Meta:
         verbose_name = _('Category')
         verbose_name_plural = _('Categories')
 
 
-class New(Model):
-    title = CharField(verbose_name=_('new_title'), max_length=255)
+class New(TranslatableModel):
+    translations = TranslatedFields(
+        title=CharField(verbose_name=_('new_title'), max_length=255),
+        description=CKEditor5Field(verbose_name=_('new_description'), config_name='extends')
+    )
+
     slug = SlugField(verbose_name=_('new_slug'), unique=True, blank=True)
     image = ImageField(upload_to='news/images', verbose_name=_('new_image'))
-    description = CKEditor5Field(verbose_name=_('new_description'), config_name='extends')
     category = ForeignKey('apps.Category', CASCADE, 'categories', verbose_name=_('new_category'))
     author = ForeignKey('apps.User', CASCADE, verbose_name=_('new_author'))
     created_at = DateTimeField(verbose_name=_('created_at'), auto_now_add=True)

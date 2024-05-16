@@ -1,3 +1,4 @@
+{% load thumbnail %}
 {% load i18n %}
 
 <!DOCTYPE html>
@@ -48,9 +49,10 @@
                 {% for new in news %}
                     <div class="col-lg-4 col-md-6 mt-4 pt-2">
                         <div class="blog-post rounded border">
-                            <div class="blog-img d-block overflow-hidden position-relative"><img
-                                    src="{{ new.image.url }}" class="img-fluid rounded-top"
-                                    alt="">
+                            <div class="blog-img d-block overflow-hidden position-relative">
+                                {% thumbnail new.image "358x268" crop="center" as im %}
+                                    <img src="{{ new.image.url }}" class="img-fluid rounded-top">
+                                {% endthumbnail %}
                                 <div class="overlay rounded-top bg-dark"></div>
                                 <div class="post-meta"><a href="javascript:void(0)"
                                                           class="text-light d-block text-right like"><i
@@ -58,7 +60,8 @@
                                                                              class="text-light read-more">{% trans 'Read More' %}<i
                                         class="mdi mdi-chevron-right"></i></a></div>
                             </div>
-                            <div class="content p-3"><small class="text-muted p float-right">15th May, 24</small>
+                            <div class="content p-3"><small
+                                    class="text-muted p float-right">{{ new.created_at }}</small>
                                 <small><a
                                         href="javascript:void(0)" class="text-primary">Political</a></small><h4
                                         class="mt-2"><a

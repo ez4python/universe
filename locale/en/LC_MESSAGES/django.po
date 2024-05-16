@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-11 13:57+0500\n"
-"PO-Revision-Date: 2024-05-11 13:59+0500\n"
+"POT-Creation-Date: 2024-05-16 14:59+0500\n"
+"PO-Revision-Date: 2024-05-16 15:00+0500\n"
 "Last-Translator: Akbarali Salohiddinov <a.salohiddinov@tuit.uz>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -60,22 +60,27 @@ msgid "new_description"
 msgstr "Description"
 
 #: apps/models/news.py:20
+#| msgid "new_author"
+msgid "new_category"
+msgstr "Category"
+
+#: apps/models/news.py:21
 msgid "new_author"
 msgstr "Author"
 
-#: apps/models/news.py:21
+#: apps/models/news.py:22
 msgid "created_at"
 msgstr "Created at"
 
-#: apps/models/news.py:22
+#: apps/models/news.py:23
 msgid "updated_at"
 msgstr "Updated at"
 
-#: apps/models/news.py:25
+#: apps/models/news.py:26
 msgid "New"
 msgstr "New"
 
-#: apps/models/news.py:26
+#: apps/models/news.py:27 templates/base.html:45
 msgid "News"
 msgstr "News"
 
@@ -107,15 +112,15 @@ msgstr "User"
 msgid "Users"
 msgstr "Users"
 
-#: root/settings.py:83
+#: root/settings.py:84
 msgid "English"
 msgstr "English"
 
-#: root/settings.py:84
+#: root/settings.py:85
 msgid "Uzbek"
 msgstr "Uzbek"
 
-#: root/settings.py:85
+#: root/settings.py:86
 msgid "Russian"
 msgstr "Russian"
 

@@ -11,7 +11,7 @@ class DashboardListView(ListView):
 
 class NewDetailView(DetailView, ListView):
     template_name = 'detail.html'
-    context_object_name = 'new_details'
+    context_object_name = 'new'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)

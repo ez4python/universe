@@ -17,6 +17,7 @@ class New(Model):
     slug = SlugField(verbose_name=_('new_slug'), unique=True, blank=True)
     image = ImageField(upload_to='news/images', verbose_name=_('new_image'))
     description = CKEditor5Field(verbose_name=_('new_description'), config_name='extends')
+    category = ForeignKey('apps.Category', CASCADE, 'categories', verbose_name=_('new_category'))
     author = ForeignKey('apps.User', CASCADE, verbose_name=_('new_author'))
     created_at = DateTimeField(verbose_name=_('created_at'), auto_now_add=True)
     updated_at = DateTimeField(verbose_name=_('updated_at'), auto_now=True)
@@ -45,4 +46,3 @@ class New(Model):
             unique_slug = f'{slug}-{num}'
             num += 1
         return unique_slug
-

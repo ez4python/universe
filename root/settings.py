@@ -22,7 +22,8 @@ INSTALLED_APPS = [
     'apps.apps.AppsConfig',
     'django_ckeditor_5',
     'rosetta',
-    'parler'
+    'parler',
+    'sorl.thumbnail'
 ]
 
 MIDDLEWARE = [

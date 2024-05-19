@@ -116,4 +116,5 @@ cython_debug/
 apps/migrations
 Makefile
 media
-db.sqlite3
+task.py
+test.py

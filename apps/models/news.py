@@ -1,4 +1,4 @@
-from django.db.models import Model, DateTimeField, CharField, ForeignKey, CASCADE, ImageField, SlugField
+from django.db.models import DateTimeField, CharField, ForeignKey, CASCADE, ImageField, SlugField
 from django.utils.text import slugify
 from django.utils.translation import gettext_lazy as _
 from django_ckeditor_5.fields import CKEditor5Field
@@ -14,14 +14,16 @@ class Category(TranslatableModel):
         verbose_name = _('Category')
         verbose_name_plural = _('Categories')
 
+    def __str__(self):
+        return self.name
+
 
 class New(TranslatableModel):
     translations = TranslatedFields(
         title=CharField(verbose_name=_('new_title'), max_length=255),
         description=CKEditor5Field(verbose_name=_('new_description'), config_name='extends')
     )
-
-    slug = SlugField(verbose_name=_('new_slug'), unique=True, blank=True)
+    slug = SlugField(verbose_name=_('new_slug'), unique=True, blank=True, editable=False)
     image = ImageField(upload_to='news/images', verbose_name=_('new_image'))
     category = ForeignKey('apps.Category', CASCADE, 'categories', verbose_name=_('new_category'))
     author = ForeignKey('apps.User', CASCADE, verbose_name=_('new_author'))
@@ -36,19 +38,9 @@ class New(TranslatableModel):
         return self.title
 
     def save(self, force_insert=False, force_update=False, using=None, update_fields=None):
-        self.slug = self._get_unique_slug()
         if force_update is True:
-            self.slug = slugify(self.title)
+            self.slug = slugify(self.translations.fields.get('title'))
         return super().save(force_insert, force_update, using, update_fields)
 
     def created_at_new(self):
         return self.created_at.strftime('%d.%m.%Y')
-
-    def _get_unique_slug(self):
-        slug = slugify(self.title)
-        unique_slug = slug
-        num = 1
-        while New.objects.filter(slug=unique_slug).exists():
-            unique_slug = f'{slug}-{num}'
-            num += 1
-        return unique_slug

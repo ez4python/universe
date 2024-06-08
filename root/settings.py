@@ -90,6 +90,18 @@ LOCALE_PATHS = [
     os.path.join(BASE_DIR / 'locale')
 ]
 
+PARLER_LANGUAGES = {
+    None: (
+        {'code': 'en'},
+        {'code': 'uz'},
+        {'code': 'ru'},
+    ),
+    'default': {
+        'fallbacks': ['en'],  # defaults to PARLER_DEFAULT_LANGUAGE_CODE
+        'hide_untranslated': False,  # the default; let .active_translations() return fallbacks too.
+    }
+}
+
 AUTH_USER_MODEL = 'apps.User'
 TIME_ZONE = 'Asia/Tashkent'
 USE_I18N = True
@@ -105,16 +117,16 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 JAZZMIN_SETTINGS = {
     # title of the window (Will default to current_admin_site.site_title if absent or None)
-    "site_title": "WORLD NEWS",
+    "site_title": "TheLatest",
 
     # Title on the login screen (19 chars max) (defaults to current_admin_site.site_header if absent or None)
-    "site_header": "ADMIN PAGE",
+    "site_header": "TheLatest",
 
     # Title on the brand (19 chars max) (defaults to current_admin_site.site_header if absent or None)
-    "site_brand": "WORLD NEWS",
+    "site_brand": "TheLatest",
 
     # Logo to use for your site, must be present in static files, used for brand on top left
-    "site_logo": "img.png",
+    "site_logo": "logo.jpg",
 
     # Logo to use for your site, must be present in static files, used for login form logo (defaults to site_logo)
     "login_logo": None,
@@ -129,10 +141,10 @@ JAZZMIN_SETTINGS = {
     "site_icon": None,
 
     # Welcome text on the login screen
-    "welcome_sign": "World of news",
+    "welcome_sign": "TheLatest",
 
     # Copyright on the footer
-    "copyright": "Kun.uz Website Ltd",
+    "copyright": "Kun.uz dan 100% chopilgan",
 
     # List of model admins to search from the search bar, search bar omitted if excluded
     # If you want to use a single search field you dont need to use a list, you can use a simple string

@@ -1,0 +1,114 @@
+{% load static %}
+{% load i18n %}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>TheLatest</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'apps/style.css' %}"/>
+    <!--[if lte IE 6]>
+    <link rel="stylesheet" type="text/css" href="{% static 'apps/ie.css' %}"/><![endif]-->
+</head>
+<body>
+<!-- BEGIN wrapper -->
+<div id="wrapper">
+    <!-- BEGIN header -->
+    <div id="header">
+        <div class="buffer">
+            <div class="buffer">
+                <ul>
+                    {% for category in categories %}
+                        <li><a href="#">{{ category.name }}</a></li>
+                    {% endfor %}
+                </ul>
+                <h1><a href="{% url 'base_dashboard_view' %}">TheLatest</a></h1>
+                <h3 class="active_lang">
+                    {% get_current_language as CURRENT_LANGUAGE %}
+                    {% get_available_languages as AVAILABLE_LANGUAGES %}
+                    {% get_language_info_list for AVAILABLE_LANGUAGES as languages %}
+                    <div class="languages">
+                        <ul class="languages">
+                            {% for language in languages %}
+                                <li>
+                                    <a href="/{{ language.code }}/"
+                                            {% if language.code == CURRENT_LANGUAGE %} class="active"{% endif %}>
+                                        {{ language.name_local }}
+                                    </a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </h3>
+                <div class="ad"><a href="{% url 'base_dashboard_view' %}"><img
+                        src="{% static 'apps/images/ad468x60.gif' %}" alt=""/></a></div>
+
+                <ol>
+                    <li class="f"><a href="#">{% trans 'Home' %}</a></li>
+                    <li><a href="about.html">{% trans 'About Us' %}</a></li>
+                    <li><a href="contact.html">{% trans 'Contact Page' %}</a></li>
+                </ol>
+                <form action="#">
+                    <input type="text" name="s" id="s" value=""/>
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- END header -->
+    <!-- BEGIN body -->
+    <div id="body">
+        <!-- BEGIN content -->
+        {% block main_content %}
+        {% endblock %}
+        <!-- END content -->
+        <!-- BEGIN sidebar -->
+        <div id="sidebar">
+            <!-- begin pages -->
+            <!-- end pages -->
+            <!-- begin archives -->
+            <!-- end archives -->
+            <!-- begin blogroll -->
+            <!-- end blogroll -->
+            <!-- begin categories -->
+            <h2>{% trans 'Categories' %}</h2>
+            <ul>
+                {% for category in categories %}
+                    <li><a href="#">{{ category.name }}</a></li>
+                {% endfor %}
+            </ul>
+            <!-- end categories -->
+            <!-- begin meta -->
+            <h2>Meta</h2>
+            <ul>
+                <li><a href="#">Login</a></li>
+                <li><a href="{% url 'register_view' %}">Register</a></li>
+            </ul>
+            <!-- end meta -->
+            <!-- begin tags -->
+            <!-- end tags -->
+            <!-- begin flickr photos -->
+            <h2>Flickr Photos</h2>
+            <div class="flickr">
+                <a href="#"><img src="{% static 'apps/images/_flickr1.jpg' %}" alt=""/></a>
+                <a href="#"><img src="{% static 'apps/images/_flickr2.jpg' %}" alt=""/></a>
+                <a href="#"><img src="{% static 'apps/images/_flickr3.jpg' %}" alt=""/></a>
+                <a href="#"><img src="{% static 'apps/images/_flickr4.jpg' %}" alt=""/></a>
+            </div>
+            <!-- end flickr photos -->
+            <!-- begin featured video -->
+            <h2>Featured Video</h2>
+            <div class="video"><img src="{% static 'apps/images/_video.jpg' %}" alt=""/></div>
+            <!-- end featured video -->
+        </div>
+        <!-- END sidebar -->
+        <div class="break"></div>
+    </div>
+    <!-- END body -->
+    <!-- BEGIN footer -->
+    <!-- END footer -->
+</div>
+<!-- END wrapper -->
+</body>
+</html>

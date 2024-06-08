@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-16 14:59+0500\n"
-"PO-Revision-Date: 2024-05-16 15:01+0500\n"
-"Last-Translator: Akbarali Salohiddinov <a.salohiddinov@tuit.uz>\n"
+"POT-Creation-Date: 2024-05-22 00:46+0500\n"
+"PO-Revision-Date: 2024-05-22 00:46+0500\n"
+"Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -19,68 +19,67 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Translated-Using: django-rosetta 0.10.0\n"
 
-#: apps/admin.py:15
+#: apps/admin/admin.py:15
 msgid "Personal info"
 msgstr "Shaxsiy ma'lumot"
 
-#: apps/admin.py:17
+#: apps/admin/admin.py:17
 msgid "Permissions"
 msgstr "Ruxsatlar"
 
-#: apps/admin.py:28
+#: apps/admin/admin.py:28
 msgid "Important dates"
 msgstr "Muhim sanalar"
 
-#: apps/models/news.py:8
+#: apps/models/news.py:10
 msgid "category_name"
 msgstr "Nomi"
 
-#: apps/models/news.py:11
+#: apps/models/news.py:14
 msgid "Category"
 msgstr "Kategoriya"
 
-#: apps/models/news.py:12
+#: apps/models/news.py:15
 msgid "Categories"
 msgstr "Kategoriyalar"
 
-#: apps/models/news.py:16
+#: apps/models/news.py:23
 msgid "new_title"
 msgstr "Sarlavha"
 
-#: apps/models/news.py:17
-msgid "new_slug"
-msgstr "Slag"
-
-#: apps/models/news.py:18
-msgid "new_image"
-msgstr "Rasmi"
-
-#: apps/models/news.py:19
+#: apps/models/news.py:24
 msgid "new_description"
 msgstr "Tavsifi"
 
-#: apps/models/news.py:20
-#| msgid "new_author"
+#: apps/models/news.py:26
+msgid "new_slug"
+msgstr "Slag"
+
+#: apps/models/news.py:27
+msgid "new_image"
+msgstr "Rasmi"
+
+#: apps/models/news.py:28
 msgid "new_category"
 msgstr "Kategoriya"
 
-#: apps/models/news.py:21
+#: apps/models/news.py:29
 msgid "new_author"
 msgstr "Muallif"
 
-#: apps/models/news.py:22
+#: apps/models/news.py:30
 msgid "created_at"
 msgstr "Yaratildi"
 
-#: apps/models/news.py:23
+#: apps/models/news.py:31
 msgid "updated_at"
 msgstr "O'zgartirildi"
 
-#: apps/models/news.py:26
+#: apps/models/news.py:34
 msgid "New"
 msgstr "Yangilik"
 
-#: apps/models/news.py:27 templates/base.html:45
+#: apps/models/news.py:35
 msgid "News"
 msgstr "Yangiliklar"
 
@@ -128,6 +127,18 @@ msgstr "Ruscha"
 msgid "admin/"
 msgstr "admin/"
 
-#: templates/base.html:60
+#: templates/index.html:33
+msgid "Home"
+msgstr "Asosiy"
+
+#: templates/index.html:34
+msgid "About Us"
+msgstr "Haqimizda"
+
+#: templates/index.html:35
+msgid "Contact Page"
+msgstr "Aloqa sahifasi"
+
+#: templates/index.html:57
 msgid "Read More"
 msgstr "Batafsil"

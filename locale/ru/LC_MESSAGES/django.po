@@ -8,79 +8,80 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-16 14:59+0500\n"
-"PO-Revision-Date: 2024-05-16 15:01+0500\n"
-"Last-Translator: Akbarali Salohiddinov <a.salohiddinov@tuit.uz>\n"
+"POT-Creation-Date: 2024-05-22 00:46+0500\n"
+"PO-Revision-Date: 2024-05-22 00:19+0500\n"
+"Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
 "X-Translated-Using: django-rosetta 0.10.0\n"
 
-#: apps/admin.py:15
+#: apps/admin/admin.py:15
 msgid "Personal info"
 msgstr "Личная информация"
 
-#: apps/admin.py:17
+#: apps/admin/admin.py:17
 msgid "Permissions"
 msgstr "Разрешения"
 
-#: apps/admin.py:28
+#: apps/admin/admin.py:28
 msgid "Important dates"
 msgstr "Важные даты"
 
-#: apps/models/news.py:8
+#: apps/models/news.py:10
 msgid "category_name"
 msgstr "Название"
 
-#: apps/models/news.py:11
+#: apps/models/news.py:14
 msgid "Category"
 msgstr "Категория"
 
-#: apps/models/news.py:12
+#: apps/models/news.py:15
 msgid "Categories"
 msgstr "Категории"
 
-#: apps/models/news.py:16
+#: apps/models/news.py:23
 msgid "new_title"
 msgstr "Название"
 
-#: apps/models/news.py:17
-msgid "new_slug"
-msgstr "Слаг"
-
-#: apps/models/news.py:18
-msgid "new_image"
-msgstr "Рисунок"
-
-#: apps/models/news.py:19
+#: apps/models/news.py:24
 msgid "new_description"
 msgstr "Описание"
 
-#: apps/models/news.py:20
-#| msgid "new_author"
+#: apps/models/news.py:26
+msgid "new_slug"
+msgstr "Слаг"
+
+#: apps/models/news.py:27
+msgid "new_image"
+msgstr "Рисунок"
+
+#: apps/models/news.py:28
 msgid "new_category"
 msgstr "Категория"
 
-#: apps/models/news.py:21
+#: apps/models/news.py:29
 msgid "new_author"
 msgstr "Автор"
 
-#: apps/models/news.py:22
+#: apps/models/news.py:30
 msgid "created_at"
 msgstr "Создан в"
 
-#: apps/models/news.py:23
+#: apps/models/news.py:31
 msgid "updated_at"
 msgstr "Обновлено в"
 
-#: apps/models/news.py:26
+#: apps/models/news.py:34
 msgid "New"
 msgstr "Новость"
 
-#: apps/models/news.py:27 templates/base.html:45
+#: apps/models/news.py:35
 msgid "News"
 msgstr "Новости"
 
@@ -128,6 +129,18 @@ msgstr "Русский"
 msgid "admin/"
 msgstr "admin/"
 
-#: templates/base.html:60
+#: templates/index.html:33
+msgid "Home"
+msgstr "Главный"
+
+#: templates/index.html:34
+msgid "About Us"
+msgstr "О нас"
+
+#: templates/index.html:35
+msgid "Contact Page"
+msgstr "Контактная страница"
+
+#: templates/index.html:57
 msgid "Read More"
 msgstr "Читать далее"

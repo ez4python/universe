@@ -1,5 +1,4 @@
 from django.contrib import admin
-from django.contrib.admin import ModelAdmin
 from django.contrib.auth.admin import UserAdmin
 from django.utils.html import format_html
 from django.utils.translation import gettext_lazy as _
@@ -56,8 +55,10 @@ class CustomUserAdmin(UserAdmin):
 @admin.register(New)
 class NewsTranslatableAdmin(TranslatableAdmin):
     list_display = ('title', 'author', 'created_at')
+    pass
 
 
 @admin.register(Category)
 class CategoryTranslatableAdmin(TranslatableAdmin):
     list_display = ('name',)
+    pass

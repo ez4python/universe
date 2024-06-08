@@ -7,7 +7,9 @@ django-jazzmin==3.0.0
 django-parler==2.3
 django-resized==1.0.2
 django-rosetta==0.10.0
+engineering-notation==0.10.0
 idna==3.7
+numpy==1.26.4
 pillow==10.3.0
 polib==1.2.0
 python-dotenv==1.0.1
